@@ -23,9 +23,9 @@ pipeline {
             }
         }
 
-    stage('Deploy') {
-           steps {
-              sh 'sudo docker run -itd --name My-first-containe2211 -p 8083:80 kiritoblink/staragileprojectfinance:v1'
-			  }
+          stage('Deploy') {
+            steps {
+               sh 'sudo docker run -itd --name My-first-containe2211 -p 8083:80 kiritoblink/staragileprojectfinance:v1'
+	        }
 	    }
     }
