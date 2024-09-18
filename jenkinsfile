@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage('git cloned'){
            steps{
-              git url:'https://github.com/Kiritoblink/myfirst_finance_project/,branch'; "master"
+              git url:'https://github.com/Kiritoblink/myfirst_finance_project/,branch': "master"
            }
         }
          stage('Build docker image'){
